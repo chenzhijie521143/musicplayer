@@ -58,7 +58,6 @@
  
 	//控制音量 这里的计算要考虑每层div的offsetTop
 	addHandler(con_bar,down,controlV,{ passive: false });
-   
     
 	//控制音量
     function controlV(ev){
@@ -88,7 +87,6 @@
 	  //console.log(audio.volume);
    }
   
-
    //获取新歌榜单
    getlistMusic(1);
 
@@ -122,8 +120,6 @@
 		}
 	  }
    }
-   
-   
     
    //通过不同的type获取歌曲榜单
    function getlistMusic(type){
@@ -131,6 +127,7 @@
      script.src='http://tingapi.ting.baidu.com/v1/restserver/ting?format=json&callback=hanlderList&from=webapp_music&method=baidu.ting.billboard.billList&type='+type+'&size=10&offset=0';
      document.body.insertBefore(script,document.body.firstChild);
    }
+
   //将歌曲列表放到content中
    function hanlderList(d){
 	   var music_name=document.getElementsByClassName('music_name');
@@ -152,7 +149,6 @@
            music_name[i].innerHTML=arr2[i];
 	   }
    }
-
 
    //搜索框获取焦点
    search_text.onfocus=function(){
@@ -231,7 +227,6 @@
 	}
   }
 
-
     //滑屏触发事件 右滑屏
     addHandler(page,'swipeRight',function(){
          //document.body.transform=500+'px';
@@ -252,9 +247,7 @@
 		 page.style.webkitTransition="-webkit-transform 500ms ease";
 		 page.style.webkitTransform='translate(0px,0px) rotateY(0deg)';
 	});
-
-
-     
+   
 	 //返回首页
 	 addHandler(back_icon,click,function(){
 	     page.style.webkitTransition="-webkit-transform 500ms ease";
@@ -328,8 +321,6 @@
 	 ev.stopPropagation();
    },{ passive: false });
    
-
-  
    
    //监听down事件
    addHandler(control,down,moveScroll,{ passive: false });
