@@ -124,7 +124,7 @@
    //通过不同的type获取歌曲榜单
    function getlistMusic(type){
      var script=document.createElement('script');
-     script.src='tingapi.ting.baidu.com/v1/restserver/ting?format=json&callback=hanlderList&from=webapp_music&method=baidu.ting.billboard.billList&type='+type+'&size=10&offset=0';
+     script.src='http://tingapi.ting.baidu.com/v1/restserver/ting?format=json&callback=hanlderList&from=webapp_music&method=baidu.ting.billboard.billList&type='+type+'&size=10&offset=0';
      document.body.insertBefore(script,document.body.firstChild);
    }
 
@@ -167,7 +167,7 @@
   function getMusic(name){
      oName.innerHTML=name;
 	 var script=document.createElement('script');
-     script.src='tingapi.ting.baidu.com/v1/restserver/ting?format=json&callback=hanlder&from=webapp_music&method=baidu.ting.search.catalogSug&query='+name;//通过歌曲名搜索 返回id
+     script.src='http://tingapi.ting.baidu.com/v1/restserver/ting?format=json&callback=hanlder&from=webapp_music&method=baidu.ting.search.catalogSug&query='+name;//通过歌曲名搜索 返回id
      document.body.insertBefore(script,document.body.firstChild);
 	 page0.style.webkitTransition="-webkit-transform 500ms linear";
 	 page0.style.webkitTransform='translate(-170px,0px) rotateY(90deg)';
@@ -179,7 +179,7 @@
   //获取歌词
   function getLrc(id){
     var script=document.createElement('script');
-    script.src='tingapi.ting.baidu.com/v1/restserver/ting?callback=hanlderLrc&format=json&&from=webapp_music&method=baidu.ting.song.lry&songid='+id;//返回hash值
+    script.src='http://tingapi.ting.baidu.com/v1/restserver/ting?callback=hanlderLrc&format=json&&from=webapp_music&method=baidu.ting.song.lry&songid='+id;//返回hash值
     document.body.insertBefore(script,document.body.firstChild);
   }
 
@@ -205,7 +205,7 @@
 	   var id=d.song[0].songid;
 	   //alert(d.song[0].songname);
 	   var script=document.createElement('script');
-       script.src='tingapi.ting.baidu.com/v1/restserver/ting?format=json&callback=hanlderSrc&from=webapp_music&method=baidu.ting.song.play&songid='+id;//返回hash值
+       script.src='http://tingapi.ting.baidu.com/v1/restserver/ting?format=json&callback=hanlderSrc&from=webapp_music&method=baidu.ting.song.play&songid='+id;//返回hash值
        document.body.insertBefore(script,document.body.firstChild);
 	   getLrc(id);//将id传给获取歌词的函数
   }
