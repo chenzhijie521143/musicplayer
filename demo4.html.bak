@@ -6,6 +6,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
+  <meta http-equiv="Content-Security-Policy"/>
   <meta name='viewport' content='width=device-width,initial-scale=1,user-scalabel=no'>
   <title>Document</title>
   <script src='js/Touchevent.js'></script>
