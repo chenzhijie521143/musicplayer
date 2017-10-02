@@ -92,8 +92,8 @@
 
    //根据选择获取榜单
    for(var i=0;i<nav_list.length;i++){
-      nav_list[i].onclick=function(){
-		for(var i=0;i<nav_list.length;i++){
+	  addHandler(nav_list[i],click,function(){
+	    for(var i=0;i<nav_list.length;i++){
 		   nav_list[i].className='';
 		}
 		this.className='active';
@@ -118,7 +118,7 @@
                getlistMusic(16);
 			 break;
 		}
-	  }
+	});
    }
     
    //通过不同的type获取歌曲榜单
@@ -152,9 +152,9 @@
 
    //搜索框获取焦点
    addHandler(search_text,click,function(){
-      search_text.focus();
-	  if(search_text.value='请输入歌曲'){
-	      search_text.value='';
+      this.focus();
+	  if(this.value='请输入歌曲'){
+	      this.value='';
 	  }
    });
    
@@ -162,6 +162,8 @@
    addHandler(search,click,function(){
       var name=search_text.value;
       getMusic(name);
+      search_text.blur();
+	  search_text.value='请输入歌曲';
    });
  
 
@@ -214,14 +216,16 @@
 
   //播放各个榜单列表
   for(var i=0;i<list.length;i++){
-	addHandler(list[i],click,function(){
+    var oA= list[i].getElementsByClassName('list_info_mark');
+	//alert(oA[0]);
+	addHandler(oA[0],click,function(){
 	  for(var i=0;i<list.length;i++){
 		var music_name=list[i].getElementsByClassName('music_name')[0];
 		var img=list[i].getElementsByClassName('Img')[0].getElementsByTagName('img')[0]; 
 		img.setAttribute('src','images/pause.jpg');
 	  }
-	  var music_name=this.getElementsByClassName('music_name')[0];
-	  var img=this.getElementsByClassName('Img')[0].getElementsByTagName('img')[0]; 
+	  var music_name=this.parentNode.getElementsByClassName('music_name')[0];
+	  var img=this.parentNode.getElementsByClassName('Img')[0].getElementsByTagName('img')[0]; 
 	  var name=music_name.innerHTML;
 	  img.setAttribute('src','images/play.jpg');
 	  //console.log(img.getAttribute('src'));

@@ -6,7 +6,6 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <meta name='viewport' content='width=device-width,initial-scale=1,user-scalabel=no'>
   <title>Document</title>
   <script src='js/Touchevent.js'></script>
@@ -40,95 +39,86 @@
 	     <div class='mark' id='mark'>
 		 </div>
 	     <ul class='menu'>
-		    <li><a href='#'>
+		    <li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
 					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
-			<li><a href='#'>
+			<li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
 					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
-			<li><a href='#'>
+			  <li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
-					 <p class='music_name'>听妈妈的话</p>
+					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
-			<li><a href='#'>
+			<li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
-					 <p class='music_name'>听妈妈的话</p>
+					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
-			<li><a href='#'>
+			    <li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
-					<p class='music_name'>听妈妈的话</p>
+					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
-			<li><a href='#'>
+			<li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
-					 <p class='music_name'>听妈妈的话</p>
+					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
-			<li><a href='#'>
+			<li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
-					 <p class='music_name'>听妈妈的话</p>
+					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
-			<li><a href='#'>
+			 <li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
-					 <p class='music_name'>听妈妈的话</p>
+					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
-			<li><a href='#'>
+			<li><div class='list_info'>
 					<div class='Img'><img src='images/pause_03.jpg'></div>
 					<div class='info'>
-					 <p class='music_name'>听妈妈的话</p>
+					  <p class='music_name'>听妈妈的话</p>
 					  <span class='player'>周杰伦</span>
 					</div>
 					<span class='time_length'>03:33</span>
-				</a>
-			</li>
-			<li><a href='#'>
-					<div class='Img'><img src='images/pause_03.jpg'></div>
-					<div class='info'>
-					 <p class='music_name'>听妈妈的话</p>
-					  <span class='player'>周杰伦</span>
-					</div>
-					<span class='time_length'>03:33</span>
-				</a>
+				</div>
 			</li>
 		 </ul>
 	</div>
