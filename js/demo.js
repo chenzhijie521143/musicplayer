@@ -151,17 +151,16 @@
    }
 
    //搜索框获取焦点
-   search_text.onfocus=function(){
-     if(this.value='请输入歌曲'){
-	     this.value='';
-	 }
-   }
+   addHandler(search_text,click,function(){
+      search_text.focus();
+   });
    
    //搜索歌曲 
-   search.onclick=function(){
-	 var name=search_text.value;
-     getMusic(name);
-   };
+   addHandler(search,click,function(){
+      var name=search_text.value;
+      getMusic(name);
+   });
+ 
 
   //搜索歌曲
   function getMusic(name){
@@ -212,7 +211,7 @@
 
   //播放各个榜单列表
   for(var i=0;i<list.length;i++){
-	list[i].onclick=function(){
+	addHandler(list[i],click,function(){
 	  for(var i=0;i<list.length;i++){
 		var music_name=list[i].getElementsByClassName('music_name')[0];
 		var img=list[i].getElementsByClassName('Img')[0].getElementsByTagName('img')[0]; 
@@ -224,7 +223,8 @@
 	  img.setAttribute('src','images/play.jpg');
 	  //console.log(img.getAttribute('src'));
 	  getMusic(name);
-	}
+	 
+	});
   }
 
     //滑屏触发事件 右滑屏
