@@ -153,6 +153,9 @@
    //搜索框获取焦点
    addHandler(search_text,click,function(){
       search_text.focus();
+	  if(search_text.value='请输入歌曲'){
+	      search_text.value='';
+	  }
    });
    
    //搜索歌曲 
@@ -223,7 +226,6 @@
 	  img.setAttribute('src','images/play.jpg');
 	  //console.log(img.getAttribute('src'));
 	  getMusic(name);
-	 
 	});
   }
 
