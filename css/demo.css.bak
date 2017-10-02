@@ -322,7 +322,7 @@
 	  height:12rem;
 	}
 	.content .menu{
-	  height:12rem;
+	  height:auto;
       overflow:auto;
 	  -webkit-overflow-scrolling:touch;
 	  width:85%;
