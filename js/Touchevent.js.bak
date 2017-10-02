@@ -44,7 +44,13 @@
 		
         var touch = event.touches[0];
 
-     
+        //判断默认行为是否可以被禁用
+		if (event.cancelable) {
+			// 判断默认行为是否已经被禁用
+			if (!event.defaultPrevented) {
+				
+			}
+		}
 		event.preventDefault();
 
         target = event.target;
@@ -131,8 +137,8 @@
     }
 
 	//监听三个触摸事件
-    doc.addEventListener("touchstart", onTouchStart,{ passive: false });
-    doc.addEventListener("touchmove", onTouchMove,{ passive: false });
-    doc.addEventListener("touchend", onTouchEnd,{ passive: false });
+    doc.addEventListener("touchstart", onTouchStart);
+    doc.addEventListener("touchmove", onTouchMove);
+    doc.addEventListener("touchend", onTouchEnd);
 
 }(document, window));

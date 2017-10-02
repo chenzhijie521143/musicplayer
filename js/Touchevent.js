@@ -48,10 +48,10 @@
 		if (event.cancelable) {
 			// 判断默认行为是否已经被禁用
 			if (!event.defaultPrevented) {
-				
+				event.preventDefault();
 			}
 		}
-		event.preventDefault();
+		
 
         target = event.target;
         

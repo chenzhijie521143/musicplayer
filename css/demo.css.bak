@@ -323,9 +323,12 @@
 	}
 	.content .menu{
 	  height:12rem;
-      overflow:scroll;
+      overflow:auto;
+	  -webkit-overflow-scrolling:touch;
 	  width:85%;
 	  margin:10px auto;
+	  position:absolute;
+	  top:0;
 	}
    
     .content .menu li{
